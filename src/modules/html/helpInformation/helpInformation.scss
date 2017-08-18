@@ -1,10 +1,10 @@
 @import "../../css/variables.scss";
 @import "../../css/mixins.scss";
-.helpRegulations{
+.helpNew{
 	padding-top: 70px;
 	padding-bottom: 60px;
   background-color: $body-bg;
-  .helpRegulations_nav{
+  .helpNew_nav{
 		padding: 20px 20px 20px 40px;
 		box-sizing: border-box;
 		width: 290px;
@@ -26,10 +26,11 @@
 	 		}
 	 	}
 	}
-	.helpRegulations_detail{
+	.helpNew_detail{
+    position: relative;
 		margin-left: 70px;
   	width: 800px;
-  	min-height: 800px;
+  	min-height: 600px;
   	font-size: 15px;
   	background-color: $white;
   	border-radius: 8px;
@@ -46,15 +47,21 @@
   		padding: 0 50px 40px 80px;
   		box-sizing: border-box;
   		li{
+        position: relative;
   			line-height: 80px;
   			border-bottom: 1px solid $body-bg;
-  			p{
-  				line-height: 20px;
-  			}
-  			.detail{
-  				display: none;
-  			}
+        .time{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
   		}
   	}
+    .helpNew_subscript{
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      margin-left: -30px;
+    }
 	}
 }

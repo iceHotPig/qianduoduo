@@ -1,10 +1,10 @@
 @import "../../css/variables.scss";
 @import "../../css/mixins.scss";
-.helpRegulations{
+.helpP2p{
 	padding-top: 70px;
 	padding-bottom: 60px;
   background-color: $body-bg;
-  .helpRegulations_nav{
+  .helpP2p_nav{
 		padding: 20px 20px 20px 40px;
 		box-sizing: border-box;
 		width: 290px;
@@ -26,10 +26,10 @@
 	 		}
 	 	}
 	}
-	.helpRegulations_detail{
+	.helpP2p_detail{
 		margin-left: 70px;
   	width: 800px;
-  	min-height: 800px;
+  	min-height: 600px;
   	font-size: 15px;
   	background-color: $white;
   	border-radius: 8px;

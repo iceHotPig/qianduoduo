@@ -109,7 +109,7 @@ var guide = {
 
 //helpBulletin
 var helpBulletin = {
-	init: function(){
+	init: function(inodeName){
 		require(['jquery'],function($){
 			$(document).ready(function(){
 			  //上下拉菜单
@@ -118,7 +118,7 @@ var helpBulletin = {
 					if (!sta) {
 						$('.list_sonone li').stop().slideUp(500);
 						$('.list_sontwo li').stop().slideDown(500);
-						 sta =true;
+						sta =true;
 					}else{
 						$('.list_sonone li').stop().slideDown(500);
 						$('.list_sontwo li').stop().slideUp(500);
@@ -136,7 +136,7 @@ var helpBulletin = {
 						sta = false;
 					}
 				})
-				$('.bulletin_detail .listp li').click(function(){
+				$(inodeName).click(function(){
 					$(this).children('span').css('color','blue');
 					$(this).children('.detail').css('display','block');
 					$(this).siblings().children('span').css('color','black');
@@ -146,7 +146,6 @@ var helpBulletin = {
 		})	
 	}
 }
-
 
 
 exports.index = index;
